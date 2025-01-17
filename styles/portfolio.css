@@ -225,11 +225,14 @@ footer textarea {
   .skills-container,
   .resume-container,
   footer,
-  .about-items {
+  .about-items,
+  .banner,
+  nav {
     flex-direction: column;
   }
 
-  footer {
+  footer,
+  .about {
     padding: 20px;
   }
 
@@ -242,8 +245,67 @@ footer textarea {
   footer textarea {
     width: calc(100% - 40px);
   }
+  .banner {
+    margin: 20px;
+    z-index: 1;
+    position: relative;
+    align-content: flex-start;
+  }
+  .banner-content {
+    width: 0px;
+  }
+  .banner-profile-picture {
+    display: none;
+  }
 
-  .about {
-    padding: 0;
+  .banner-greetings {
+    font-weight: 600;
+    font-size: 2em;
+  }
+  .banner-title {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .banner-discription {
+    line-height: 20px;
+    font-size: 1em;
+    font-weight: normal;
+  }
+  .banner-profile-picture {
+    width: 100vw;
+    height: 5vh;
+    object-fit: contain;
+  }
+  .banner-content {
+    width: auto;
+    height: auto;
+  }
+  .btn-primary {
+    background-color: #fd6e0a;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .dark-2 {
+    font-size: 1em;
+  }
+  .header {
+    background-image: /*none;*/ url("../images/header_bg.png");
+    /* background-position: none;*/
+  }
+  nav {
+    flex-direction: row;
+    margin: 0 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 40px;
+    gap: 5px;
+  }
+  .nav-title {
+    font-size: 30px;
   }
 }
